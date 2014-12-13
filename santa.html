@@ -1,0 +1,70 @@
+<!doctype html>
+<html ng-app = "app">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Wishlist for Santa</title>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/santa.css">
+        <link rel="author" href="humans.txt">
+        <link rel = "stylesheet"
+         
+    </head>
+    <body ng-controller = "SantaCtrl">
+		<div class="container-fluid">
+
+			<div class="row">
+					<div class="col-md-3">  <img id= "topLeft" src="http://img1.wikia.nocookie.net/__cb20131202155534/legomessageboards/images/7/7f/ChristmasLights.gif">  </div>
+					<div class="col-md-6">
+				<h2  id = "topMid"> This is your wish list. So far you have wished for   <span class = "number">{{getTotalWishes()}}</span>    gifts from jolly St. Nick!</h2>
+				</div>
+				<div class="col-md-3">  <img id = "topRight" src="http://img1.wikia.nocookie.net/__cb20131202155534/legomessageboards/images/7/7f/ChristmasLights.gif"></div>
+			</div>
+
+			<div class="wish">
+			<div class="row">
+				<div class="col-md-6">
+				<ul>
+					<ul ng-repeat = "wish in wishes">
+				<input type="checkbox" ng-model = "wish.done" id = "box"> <span class ="done-{{wish.done}}" >
+						{{wish.text}}
+						</span>
+					</ul>
+				</ul>
+				</div>
+				<div class="col-md-4">
+					<img src="http://www.guychurch.com/wp-content/uploads/2014/01/santa_claus.jpg">
+				</div>
+				</div>
+				</div>
+
+			<div class="row">
+				<div class="col-md-6" ng-class = "class">
+				<form>
+					<input placeholder = "I want..." type = "text" ng-model = "NewWishes" id = "newWish" ng-class = "class" ng-click ="changeClass()" >
+				</div>
+				<div class="col-md-4">
+					<button ng-click = "addWishes()" id = "wish" ng-disabled = "!NewWishes"> <p> Wish!</p></button>
+				</form>
+
+			</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+				<button ng-click = "clearWishes()" id = "clear"> <p>Remove a wish.</p> </button>
+				</div>
+				<div class="col-md-4">
+					<audio controls autoplay repeat> 
+				<source src="http://www.thewavsite.com/Christmas/The%20Chipmunk%20Christmas%20Song%20-%20Alvin%20and%20the%20Chipmunks.wav"> </audio>
+				</div>
+			</div>
+		</div>
+		</div>
+
+
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.3.3/underscore-min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+        <script src = "js/santa.js"></script>
+    </body>
+</html>

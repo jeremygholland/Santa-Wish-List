@@ -1,0 +1,57 @@
+audio { margin-top: 12%;
+		width:155%;}
+#topLeft {width:100%;
+		height:200%;}
+#topMid{color: #21a869;
+		text-align: center; }
+#topRight{
+		width:100%;
+		height:100%;
+		color:#5A9529;}
+
+.wish {font-size: 290%;
+		color:#21a869;
+		text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;}
+ul {margin-top:10%;}
+#box {font-size: 290%;}
+img {background-repeat:repeat-y;
+			width:154%;
+			height:100%;
+			margin-top:5%;}
+#clear {width:100%;
+		height:200%;
+		margin-top:5%;
+		font-size:200%;
+		border-radius: 50%;
+		background-color: #F40019;
+		color:#21a869;
+		border-color:#21a869;
+
+		}
+#wish{width:155%;
+		margin-top:6%;
+		font-size:200%;
+		border-radius : 50%;
+		color:#21a869;
+	background-color: #F40019;
+		border-color:#21a869;}
+#newWish{width:100%;
+		margin-top:5%;
+		height:100%;
+		font-size: 200%;
+		text-align: center;
+		color: #F40019;}
+h4 {font-size: 200%;}
+body{background-image: url("https://31.media.tumblr.com/tumblr_ma5p1oh8oQ1rwlsczo1_500.gif");
+	background-repeat:repeat-y;
+	background-size: 100%;}
+.done-true {text-decoration: line-through;
+			color:#21a869;}
+input:focus {background-color:#21a869 ;
+		color:#F40019;
+		border-color: #F40019;}
+.number {font-size: 200%;
+		font-weight:bold;
+		color:#F40019;}
+h2 {border-color: #F40019 #21a869;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;)
